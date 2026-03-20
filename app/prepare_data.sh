@@ -16,5 +16,5 @@ hdfs dfs -put -f a.parquet / && \
     echo "Putting data to hdfs" && \
     hdfs dfs -put data / && \
     hdfs dfs -ls /data && \
-    hdfs dfs -ls /index/data && \
+    hdfs dfs -ls /indexer/data && \
     echo "done data preparation!"
