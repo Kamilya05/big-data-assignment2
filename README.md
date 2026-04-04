@@ -5,6 +5,8 @@
 - Docker
 - Docker compose
 ## Step 2: Run the command
+Place the `a.parquet` file in the `app/` directory
+## Step 3: Run the command
 ```bash
 docker compose up 
 ```
