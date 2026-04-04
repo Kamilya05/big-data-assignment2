@@ -10,7 +10,7 @@ for line in sys.stdin:
             continue
 
         doc_id = parts[0]
-        text = " ".join(parts[1:])   # ВСЁ остальное считаем текстом
+        text = " ".join(parts[1:])
 
         words = re.findall(r'\w+', text.lower())
 
