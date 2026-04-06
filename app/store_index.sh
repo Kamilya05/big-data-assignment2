@@ -1,2 +1,6 @@
 #!/bin/bash
-echo "store the index and others to Cassandra/ScyllaDB tables"
+
+echo "Storing index to Cassandra"
+
+source .venv/bin/activate
+python3 app.py

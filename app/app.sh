@@ -1,26 +1,18 @@
 #!/bin/bash
 # Start ssh server
-service ssh restart 
-
+service ssh restart
 # Starting the services
 bash start-services.sh
-
 # Creating a virtual environment
 python3 -m venv .venv
 source .venv/bin/activate
-
-# Install any packages
+# # Install any packages
 pip install -r requirements.txt  
-
-# Package the virtual env.
+# # Package the virtual env.
 venv-pack -o .venv.tar.gz
-
-# Collect data
+# # Collect data
 bash prepare_data.sh
-
-
-# Run the indexer
+# # Run the indexer
 bash index.sh
-
-# Run the ranker
-bash search.sh "this is a query!"
+# # Run the ranker
+bash search.sh "snowman christmas"
